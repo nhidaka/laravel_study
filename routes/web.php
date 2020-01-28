@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'ShopController@index');
-Route::get('/', 'ShopController@muCart');
+Route::get('/mycart', 'ShopController@myCart');
 
 Auth::routes();
 
