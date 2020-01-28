@@ -15,7 +15,8 @@ class CreateMinesTable extends Migration
     {
         Schema::create('mines', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('name', '50');
+            $table->integer('age');
         });
     }
 
